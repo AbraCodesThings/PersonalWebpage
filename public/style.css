@@ -1,0 +1,9 @@
+body{
+    position: absolute;
+    height: 100%;
+    background-color: #ccc
+}
+
+h1{
+    color:#555;
+}
