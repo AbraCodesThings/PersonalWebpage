@@ -85,6 +85,18 @@ h1{
     border:inset 2px;
 }
 
+.window_content {
+    background-color: white;
+    border: inset;
+    margin: 2px 5px 4px 5px;
+    padding: 2px;
+}
+
+.window_content h1,h2,h3 {
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-weight: bold;
+}
+
 .draggable_window{
     position: absolute;
     z-index: 9;
@@ -94,6 +106,10 @@ h1{
     text-align: center;
 }
 
+.draggable_window_header{
+    display: flex;
+}
+
 .draggable_window .draggable_window_header{
     padding: 5px;
     cursor: move;
@@ -101,4 +117,16 @@ h1{
     font-family: 'W95FA';
     background-color: #000080;
     color: #f1f1f1;
+}
+
+.button_close {
+    background-color: red;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    border: outset 2px;
+    /* margin: 1px 1px 1px auto; */
+    padding: 2px;
+    align-self: center;
+    justify-self: end;
+
 }

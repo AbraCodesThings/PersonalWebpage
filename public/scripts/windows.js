@@ -6,10 +6,17 @@ function create_test_window(){
     window.setAttribute("id", `window_${window_index}`);
     window.setAttribute("class", "draggable_window")   
     window.innerHTML = //this could be a component
-        `<div id="window_${window_index}_header" class="draggable_window_header">Test Window</div>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>`
+        `
+            <div id="window_${window_index}_header" class="draggable_window_header">
+                <span>Test Window</span>
+                <span class="button_close">x</span>
+            </div>
+            <div class="window_content">
+                <h1>THIS IS A TEST.</h1>
+                <p>If this window appears, it means that this is, indeed, a test.<p>
+                <small>A test of patience, it is.</small>
+            </div>
+        `
     desktop_element.appendChild(window);
     //TODO: add events
     dragElement(window);
