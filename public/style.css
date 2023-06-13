@@ -24,7 +24,16 @@ h1{
     /* TODO: make a container that acts like the Windows desktop */
 }
 
-.start_bar{
+.start_minimized {
+    align-self: center;
+    width: inherit;
+    margin: 5px;
+    height: 68%;
+    
+}
+
+.taskbar{
+    display: flex;
     position: fixed;
     bottom: 0;
     font-family: 'W95FA';
@@ -40,14 +49,40 @@ h1{
 }
 
 .start_button{
+    display: flex;
+    align-self: center;
     border: outset;
-    margin: 5px;
-    max-width: 70px;
-    height: 60%;
+    margin: 0px 7px 0px 2px;
+    width: 70px;
+    height: 68%;
 }
 
-.start_button span{
+.start_button span {
+    align-self: center;
     margin-left: 5px;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+.start_button:active {
+    border:inset;
+}
+
+.start_tools {
+    display: flex;
+    justify-self: end;
+    margin: 0px 5px 0px 2px;
+}
+
+.start_tools_clock {
+    align-self: center;
+    height: 68%;
+    width:60px;
+    border:inset 2px;
 }
 
 .draggable_window{

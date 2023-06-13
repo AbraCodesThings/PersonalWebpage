@@ -3,8 +3,8 @@
     <div class="desktop" id="desktop">
         <!-- Here be windows -->
     </div>
-    <div class="start_bar">
-        <div class="start_button">
+    <div class="taskbar">
+        <div class="start_button" id="start_button">
             <!--  -->
             <span>Start</span>
         </div>
