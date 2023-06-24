@@ -79,10 +79,14 @@ h1{
 }
 
 .start_tools_clock {
+    text-align: center;
+    padding: 1px;
     align-self: center;
     height: 68%;
-    width:60px;
+    width:100px;
     border:inset 2px;
+    line-height: 1.5;
+
 }
 
 .window_content {
@@ -110,9 +114,14 @@ h1{
     display: flex;
 }
 
+.draggable_window_header span{
+    display: inline-flex;
+    align-items: center;
+}
+
 .draggable_window .draggable_window_header{
-    padding: 5px;
-    cursor: move;
+    padding: 0 0 0 5px;
+    cursor: grab;
     z-index: 10;
     font-family: 'W95FA';
     background-color: #000080;
@@ -124,9 +133,13 @@ h1{
     color: white;
     font-family: 'Courier New', Courier, monospace;
     border: outset 2px;
-    /* margin: 1px 1px 1px auto; */
-    padding: 2px;
+    margin: 1px 1px 1px auto;
+    padding: 1px;
     align-self: center;
     justify-self: end;
+    align-content: center;
+    justify-content: center;
+    width: 20px;
+    cursor:pointer
 
 }

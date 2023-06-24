@@ -1,6 +1,6 @@
 var window_index = 0;
 
-function create_test_window(){
+export function create_test_window(){
     let desktop_element = document.getElementById("desktop");
     const window = document.createElement("div");
     window.setAttribute("id", `window_${window_index}`);
@@ -19,6 +19,10 @@ function create_test_window(){
         `
     desktop_element.appendChild(window);
     //TODO: add events
+    let close_button = document.querySelector(`div#window_${window_index}_header span.button_close`);
+    close_button.onclick = function() {
+        window.remove();
+    }
     dragElement(window);
     window_index++;
 }
@@ -59,4 +63,4 @@ function dragElement(elmnt) {
     }
 }
 
-create_test_window()
+// create_test_window()
