@@ -20,8 +20,16 @@ export function create_test_window(){
     desktop_element.appendChild(window);
     //TODO: add events
     let close_button = document.querySelector(`div#window_${window_index}_header span.button_close`);
+    close_button.onmousedown = function() {
+        close_button.style.border = "inset 2px";
+    }
+    close_button.onmouseup = function() {
+        close_button.style.border = "outset 2px";
+    }
     close_button.onclick = function() {
         window.remove();
+        window_index--;
+        console.log(window_index); //testing
     }
     dragElement(window);
     window_index++;
